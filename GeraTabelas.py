@@ -5,12 +5,10 @@ from contextlib import redirect_stdout
 teams = []
 n = int(input("Digite a Quantidade de Equipes: "))
 
-print()
 for i in range(0, n):
-    print("Digite o nome da equipe", i + 1, )
-    item = str(input())
-    teams.append(item)
-    print()
+    i += 1
+    t = "Equipe " + str(i).zfill(2)
+    teams.append(t)
 
 # Adicionando ítem "Folga" nos casos impares
 qtdteams = len(teams)
